@@ -1,0 +1,449 @@
+
+*{
+    margin: 0;
+    font-family: "Caveat Brush", cursive;
+    background-color: #FFFFFF;
+   
+}
+
+   
+.caveat-brush-regular {
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+#head {
+   display: flex;
+    height: 84px;
+    justify-content: space-between;
+    border-bottom: 3px solid rgb(180, 180, 180);   
+    text-align: center; 
+    align-items: center;
+   
+}
+.logo {
+    margin-left: 40px;
+    cursor: pointer;
+}
+.home-header{
+	display:flex;
+	flex-direction: column;
+	max-width: 60%;
+	margin: 0 auto;
+	text-align: center;
+  
+}
+.home-header input{
+
+	padding: 0.5em;
+	margin-right: -5em;
+    background-color: #e7e7e7;
+    border:none;
+    color: #333;
+    border-radius: 50px;
+    width: 500px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.home-header button{
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.5s;
+    color: black;
+    
+}
+.home-header button:hover{
+    margin-top: -5px; 
+    border-radius: 10px;
+    box-shadow: 1px 10px 15px #3d4646;   
+}
+
+.home-header a{
+    color: #686666;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 50px;
+    transition: 0.5s;
+    color: rgb(129, 129, 129);
+}
+.home-header a:hover{
+    margin-top: -5px; 
+    border: solid 1px #6a6a6a;
+    box-shadow: 1px 5px 10px #3d4646; 
+   
+}
+.cart button{
+    background: transparent;
+    margin-right: 20px;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: black;
+}
+.cart button:hover{
+    margin-top: -5px; 
+    border-radius: 10px;
+    box-shadow: 1px 10px 15px #3d4646;   
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    column-count: 6;
+    
+}
+
+.container .card{
+    border-radius: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(50,50,99,.1);
+    break-inside: avoid-column;
+    overflow: hidden; 
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    
+} 
+
+.card .image{
+    display: block;
+    width: 100%;
+    border-radius: 25px;
+  object-fit: cover; 
+  overflow-clip-margin: content-box;
+  overflow: clip; 
+}
+.card .image:hover {
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+   
+}
+
+.container .card:hover{
+    margin-top: -10px;
+    box-shadow: 1px 20px 25px #3d4646;
+   
+} 
+.container .card h1{
+    font-size: 18px;
+}
+
+.content a{
+    color: #3d4646;
+}
+
+.cadastrar{
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 60px;
+    transition: 0.5s;
+    color: black;
+    font-family: "Caveat Brush", cursive;
+    border-radius: 5px;
+}
+
+.cadastrar:hover{
+    margin-top: -20px;
+    box-shadow: 2px 10px 15px #3d4646; 
+}
+
+.cadastrarProd{
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s;
+    color: black;
+    font-family: "Caveat Brush", cursive;
+    border-radius: 5px;
+}
+
+.cadastrarProd:hover{
+    margin-top: -20px;
+    box-shadow: 2px 10px 15px #3d4646; 
+}
+
+.form{
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    background-color: #fbffff;
+    max-width: 350px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid black;
+  
+}
+.body-cadastrar-Prod{
+    margin-bottom: 100px;
+}
+.textcad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: lightgrey;
+    margin-top:100px;
+
+}
+
+.form-control{
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.actions{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
+    margin-top: 50px;
+   
+}
+
+.cad{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid black;
+   margin-top: 10px;
+   margin-bottom: 10px;
+    
+}
+
+.produtos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    background: ghostwhite;
+}
+
+.produtos-text{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.produtos-text img{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    max-width: 200px;
+   padding: 30px;
+   border-radius: 10px;
+}
+
+.buyProducts{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    margin-top: 30px;
+}
+.buy-products img{
+    max-width: 100px;
+    display: flex;
+    border: 1px solid #333;
+}
+.buy-text{
+    display: flex;
+    text-align: left; 
+    padding: 10px;
+}
+
+.buy-subtext{
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+    border-top: 1px solid #333;
+}
+.footer-buy{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+.btn-finishbuy{
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: rgb(70, 168, 67);
+    border-color: rgb(70, 168, 67);
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 200px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.btn-add{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #0707071a;
+    color: #3d4646;
+    border: 2px solid #3d4646;
+    padding: .5em 1.2em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .5s;
+
+}
+
+/* LOGIN E REGISTER */
+.auth-container{
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px  #333;
+    border-radius: 25px;
+   align-items: center;
+	max-width: 450px;
+    padding-top: 50px;
+    padding-bottom: 200px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+    font-family: "Caveat Brush", cursive;
+}
+.auth-container h2{
+   
+	margin-bottom: 1em;
+	color: black;
+	border-left: 4px solid #3d4646;
+	padding: .9em;
+	width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: "Caveat Brush", cursive;
+}
+.auth-container a {
+   
+	color:#3d4646;
+    font-family: "Caveat Brush", cursive;
+}
+
+.logopdart{
+    padding: 30px;
+   
+}
+
+.login{
+    display: flex;
+}
+
+.form-control{
+	display: flex;
+	margin-bottom: 1em;
+}
+.form-control {
+    padding: 10px;
+    align-items: left;
+    justify-content: left;
+    display: flex;
+}
+.form-control label {
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+.form-control textarea{
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid #3d4646;
+}
+form input[type='submit'],
+.btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+	background-color:  #0707071a;
+	color: #3d4646;
+	border: 2px solid #0707071a;
+    display: flex;
+	padding: .5em 1.2em;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	transition: .5s;
+}
+ 
+form input[type='submit']:hover,
+.btn:hover{
+	background-color: #3d4646;
+	color: #fff;
+}
+a.btn-voltar2{
+    font-size: 14px;
+    background-color:  #0707071a;
+	color: #3d4646;
+	border: 2px solid #0707071a;
+    display: flex;
+	padding: .5em 1.2em;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+i.bi.bi-reply{
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .5s;
+}
+.finish{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    margin-bottom: 200px;
+
+}
+footer{
+	text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+	border-top: 1px solid  #3d4646;
+    
+}
+
+footer span{
+	font-weight: bold;
+	color:  #3d4646;
+}
+

@@ -1,0 +1,37 @@
+<a class="logo"> 
+            <img src="/images/logopdart2.png" alt="logopd" width="300px">
+        </a>
+<div class="buyProducts"> 
+ 
+  <div class="buy-products">
+ <h1>Produtos no carrinho!</h1>
+
+{{#each product}}
+
+ <div class="buy-text">
+    <img src="{{this.image}}">
+ <div class="buy-subtext">
+    <p><b>{{this.name}}</b></p>
+    <p>R$ {{this.price}}</p>
+    <p>Descrição: Design único e ideal para o seu ambiente!
+      material:xxxxx medidas:xxxxxx
+    </p>
+ </div>
+ </div>
+   
+  <form action="/products/removeBuy" method="POST">
+  
+  <input type="hidden" name="id" value="{{this.id}}">
+      <input type="submit" value="Excluir!">   
+    </form> 
+
+{{/each}}
+<div class="footer-buy">
+
+  <a class="btn-voltar2" href="/">Adicionar + Produtos</a>
+
+ <a class="btn-finishbuy" href="/products/finish">Finalizar Compra!</a>
+
+</div>
+
+   

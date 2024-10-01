@@ -1,0 +1,33 @@
+<a class="logo"> 
+            <img src="/images/logopdart2.png" alt="logopd" width="300px">
+        </a>
+<main
+class="body-cadastrar-Prod">
+
+<h1 class="textcad">Cadastrar Produtos!</h1>
+<form action="/products/insert" method="POST" class="form">
+    <input type="hidden" name="id" value="{{products.id}}">
+    
+    <div class=" form-control">
+        <label for="name">Nome do Produto: </label>
+            <input type="text" name="name" placeholder="Digite o nome"
+            value="{{products.name}}">
+    </div>
+
+    <div class="form-control">
+        <lable for="price"> Valor do Produto: </lable>
+        <input type="number" name="price" placeholder="0,00"
+        value="{{products.price}}">
+    </div>
+
+    <div class="form-control">
+        <lable for="image"> Imagem do Produto: </lable>
+        <input type="text" name="image" placeholder="jpg, png"
+        value="{{products.image}}">
+    </div>
+
+    <input class="cad"  type="submit" value="Cadastrar">
+    
+   </main>
+    <a class="btn-voltar" href="/"><i class="bi bi-reply"></i></a>
+</form>

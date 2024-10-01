@@ -1,0 +1,79 @@
+<div class="auth-container">
+        <div class="login"> 
+        <img src="/images/logopdart.jpeg" alt="logopd" width="100px" class="logopdart">
+        <h2>Cadastrar</h2>
+        </div>
+    
+        <form id="registerForm" action="/register" method="POST">
+            <div class="form-control">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite o seu nome" required>
+                <span id="nameError"></span>
+            </div>
+            <div class="form-control">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Digite o seu email" required>
+            </div>
+            <div class="form-control">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Digite a sua senha" required>
+                <span id="passwordError"></span>
+            </div>
+            <div class="form-control">
+                <label for="confirmpassword">Confirmação de senha:</label>
+                <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirme a sua senha" required>
+                <span id="confirmPasswordError"></span>
+            </div> 
+             <p> <input type="checkbox" name="isSupplier"> Sou Fornecedor!</p>
+            <input type="submit" value="Cadastrar">
+            <p>Já tem conta? <a href="/login">Clique aqui!</a> </p>
+        </form>
+       <a class="btn-voltar" href="/login"><i class="bi bi-reply"></i></a>
+</div>
+
+<script>
+    const registerForm = document.getElementById('registerForm');
+    registerForm.addEventListener('submit', function(evento){
+
+            let valid = true;
+
+             document.getElementById('nameError')
+                .textContent = ''
+            document.getElementById('passwordError')
+                .textContent = ''
+            document.getElementById('passwordError')
+                .textContent = ''
+
+            
+            const name = document.getElementById('name').value;
+            if(name.length <= 3){
+                document.getElementById('nameError')
+                .textContent = "O nome deve ter mais de 3 letras";
+                let valid = false;
+            }
+
+            const password = document.getElementById('password').value;
+            if(password.length < 8){
+                document.getElementById('passwordError')
+                .textContent = "A senha deverá ter mais de 8 caracteres";
+                let valid = false;
+            }
+
+            const confirmPassword = document.getElementById('confirmpassword').value;
+            if(password !== confirmPassword){
+                document.getElementById('confirmPasswordError')
+                .textContent = "As senhas não coincidem";
+                let valid = false;              
+            }
+
+            if(!valid){
+                 evento.preventDefault();
+            } else{
+              if(!confirm('Você realmente deseja se registrar?')){
+                evento.preventDefault();
+              }
+            }
+    })
+    
+
+</script>
