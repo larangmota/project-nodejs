@@ -11,6 +11,8 @@ const authRoutes = require('./routes/authRoutes')
 const handlebars = require('handlebars');
 const app = express();
 const Buy = require('./models/Buy');
+require('dotenv').config(); // Carrega as variáveis de ambiente do .env
+
 
 
 
