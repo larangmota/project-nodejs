@@ -6,17 +6,6 @@
    
 }
 
-@media (max-width: 768px) {
-    .container {
-      padding: 10px;
-    }
-  
-    .header {
-      font-size: 16px;
-    }
-
-  }
-
    
 .caveat-brush-regular {
     font-family: "Caveat Brush", cursive;
