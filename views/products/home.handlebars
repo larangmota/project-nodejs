@@ -6,78 +6,71 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>ProductArtDesign-Shop</title>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
     </style>
-
 </head>
 <body>
-     <header id="head"> 
+    <header id="head"> 
         <a class="logo"> 
             <img src="/images/logopdart2.png" alt="logopd" width="300px">
         </a>
- <div class="home-header">
-    <form action="/products" method="GET">
-    <input class="barra-search" type="text" name="search" 
-        placeholder="Search" value="{{searchQuery}}">
-           <a href="/"> X </a>
-     <button type="submit"><i class="bi bi-search"></i>
-     </button>
+        <div class="home-header">
+            <form action="/products" method="GET">
+                <input class="barra-search" type="text" name="search" 
+                    placeholder="Search" value="{{searchQuery}}">
+                <a href="/"> X </a>
+                <button type="submit"><i class="bi bi-search"></i></button>
 
-    {{#if searchQuery}}
-    <p>Você pesquisou por: {{searchQuery}}</p>
-    {{/if}}
-    </form>
-</div>
-   <div class="menu-toggle">
-    <button id="menu-btn"><i class="bi bi-three-dots"></i></button>
-    </div>
-
-    <div class="menu-toggle">
-    <button id="menu-btn"><i class="bi bi-three-dots"></i></button>
-    </div>
-
-<div id="dropdown-menu" class="dropdown-content">
-    <a class="cart" href="/products/buy">
-        <button><i class="bi bi-cart4"></i></button> Carrinho
-    </a>
-
-    <nav class="login-area">
-        {{#if session.userid}}
-            <a class="cadastrarProd" href="/logout">Logout</a>
-        {{else}}
-            <a class="cadastrar" href="/login">Login</a>
-        {{/if}}
-        {{#if session.isSupplier}}
-            <a class="cadastrarProd" href="/products/add">Cadastrar produto</a>
-        {{/if}}
-    </nav>
-  </div>
-
-</header>
-<main>
-    <div class="container">
-{{#each products}}
-        <div class="card">
-        <div class="image">
-            <a href="/products/seeproducts/{{this.id}}">
-        <img src="{{this.image}}" alt="card1" width="100%">
-        </a>
+                {{#if searchQuery}}
+                <p>Você pesquisou por: {{searchQuery}}</p>
+                {{/if}}
+            </form>
         </div>
-        <h1>{{this.name}} </h1>
-        <div class="content">
-        
-        </div> 
-        </div> 
-         {{/each}} 
-    <div>
 
-</main>
-<script>
-    document.getElementById('menu-btn').addEventListener('click', function() {
-        document.getElementById('dropdown-menu').classList.toggle('show');
-    });
-</script>
-     
+        <div class="menu-toggle">
+            <button id="menu-btn"><i class="bi bi-three-dots"></i></button>
+        </div>
+
+        <div id="dropdown-menu" class="dropdown-content">
+            <a class="cart" href="/products/buy">
+                <button><i class="bi bi-cart4"></i></button> Carrinho
+            </a>
+
+            <nav class="login-area">
+                {{#if session.userid}}
+                    <a class="cadastrarProd" href="/logout">Logout</a>
+                {{else}}
+                    <a class="cadastrar" href="/login">Login</a>
+                {{/if}}
+                {{#if session.isSupplier}}
+                    <a class="cadastrarProd" href="/products/add">Cadastrar produto</a>
+                {{/if}}
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            {{#each products}}
+                <div class="card">
+                    <div class="image">
+                        <a href="/products/seeproducts/{{this.id}}">
+                            <img src="{{this.image}}" alt="card1" width="100%">
+                        </a>
+                    </div>
+                    <h1>{{this.name}}</h1>
+                    <div class="content">
+                        <!-- Conteúdo adicional aqui -->
+                    </div> 
+                </div> 
+            {{/each}} 
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('dropdown-menu').classList.toggle('show');
+        });
+    </script>
 </body>
-
 </html>
