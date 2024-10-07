@@ -26,26 +26,29 @@
                 {{/if}}
             </form>
         </div>
+        
+        <div class="header-actions">
+    <a class="cart" href="/products/buy">
+        <button><i class="bi bi-cart4"></i></button>
+    </a>
 
-            <a class="cart" href="/products/buy">
-                <button><i class="bi bi-cart4"></i></button> 
-            </a>
-
-            <nav class="login-area">
-                {{#if session.userid}}
-                    <a class="cadastrarProd" href="/logout">Logout</a>
-                {{else}}
-                    <a class="cadastrar" href="/login">Login</a>
-                {{/if}}
-                {{#if session.isSupplier}}
-                    <a class="cadastrarProd" href="/products/add">Cadastrar produto</a>
-                {{/if}}
-            </nav>
+    <nav class="login-area">
+        {{#if session.userid}}
+            <a class="cadastrarProd" href="/logout">Logout</a>
+        {{else}}
+            <a class="cadastrar" href="/login">Login</a>
+        {{/if}}
+        {{#if session.isSupplier}}
+            <a class="cadastrarProd" href="/products/add">Cadastrar produto</a>
+        {{/if}}
+    </nav>
         </div>
-    </header>
+
+        </div>
+        </header>
 
     <main>
-        <div class="container">
+     <div class="container">
             {{#each products}}
                 <div class="card">
                     <div class="image">

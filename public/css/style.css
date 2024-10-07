@@ -45,21 +45,19 @@
         border-bottom: 2px solid rgb(180, 180, 180); 
     }
 
-    .cart, .login-area {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
+    .header-actions { 
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: center; 
+        width: 100%; 
+        margin-top: 10px; 
     }
 
     .cart button {
-        margin-right: 10px;
+        margin-right: 10px; 
     }
 }
-
-
-
 
  .home-header input {
      padding: 0.5em;
