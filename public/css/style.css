@@ -13,6 +13,7 @@
   }
   #head {
     display: flex;
+    width: 100%;
     height: 84px;
     justify-content: space-between;
     border-bottom: 3px solid rgb(180, 180, 180);   
@@ -23,6 +24,7 @@
  @media (max-width: 768px) {
      #head {
          flex-direction: column;
+         align-items: center;
          height: auto;
          padding: 10px;
          border-bottom: 2px solid rgb(180, 180, 180); 
@@ -396,7 +398,9 @@
     display: flex;
 }
 .form-control label {
-	font-weight: bold;
+    padding: 5px;
+    margin-bottom: 0.2em;
+    font-size: 18px;
 	margin-bottom: 0.5em;
 }
 
@@ -429,7 +433,7 @@ form input[type='submit']:hover,
 	color: #fff;
 }
 @media (max-width: 768px) {
-    .form-control {
+    .form-control .auth-container{
         font-family: "Caveat Brush", cursive;
     }
 }
