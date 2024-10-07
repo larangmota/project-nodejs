@@ -305,7 +305,7 @@
 .footer-buy{
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 50px;gi
     padding-bottom: 30px;
 }
 .btn-finishbuy{
@@ -320,7 +320,9 @@
     text-align: center;
     text-decoration: none;
 }
-
+.empty-cart{
+    padding: 20px;
+}
 
 .btn-add{
     margin-top: 10px;
