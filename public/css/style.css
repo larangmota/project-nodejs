@@ -6,6 +6,17 @@
    
 }
 
+@media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .header {
+      font-size: 16px;
+    }
+
+  }
+
    
 .caveat-brush-regular {
     font-family: "Caveat Brush", cursive;
@@ -21,6 +32,14 @@
     text-align: center; 
     align-items: center;
    
+}
+@media (max-width: 768px) {
+    #head {
+        flex-direction: column; 
+        height: auto; 
+        padding: 10px; 
+        border-bottom: 2px solid rgb(180, 180, 180); 
+    }
 }
 .logo {
     margin-left: 40px;
@@ -119,9 +138,9 @@
     display: block;
     width: 100%;
     border-radius: 25px;
-  object-fit: cover; 
-  overflow-clip-margin: content-box;
-  overflow: clip; 
+    object-fit: cover; 
+    overflow-clip-margin: content-box;
+    overflow: clip; 
 }
 .card .image:hover {
     transform: scale(1.1);
@@ -134,6 +153,21 @@
     box-shadow: 1px 20px 25px #3d4646;
    
 } 
+@media (max-width: 768px) {
+    .container {
+        column-count: 2; 
+        padding: 10px; 
+    }
+
+    .container .card {
+        margin-bottom: 15px;
+        padding: 5px; 
+    }
+
+    .card .image {
+        border-radius: 15px; 
+    }
+}
 .container .card h1{
     font-size: 18px;
 }
