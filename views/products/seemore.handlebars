@@ -21,26 +21,24 @@
     <a class="btn-voltar" href="/"><i class="bi bi-reply"></i></a>
     
     <form class="ipt-remove" action="/products/remove/{{product.id}}" method="POST">
-
     {{#if session.userid}}
     {{#if session.isSupplier}}
       <input type="submit" value="Excluir!"> 
     {{/if}}
 
     {{/if}}
-      
     </form> 
+
     <form class="ipt-addcart" method="POST" action="/products/addcart">
       <input type="hidden" name="name" value="{{product.name}}">
       <input type="hidden" name="price" value="{{product.price}}">
       <input type="hidden" name="image" value="{{product.image}}">
       {{#if session.userid}}
-       {{#if session.isSupplier}}
-
+      {{#if session.isSupplier}}
        {{else}}
       <input type="submit" value="+ Adicionar ao Carrinho!">
-        {{/if}}
-        {{/if}}
+      {{/if}}
+      {{/if}}
     </form>
   </div>
 </div>
