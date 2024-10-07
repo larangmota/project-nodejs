@@ -27,11 +27,6 @@
             </form>
         </div>
 
-        <div class="menu-toggle">
-            <button id="menu-btn"><i class="bi bi-three-dots"></i></button>
-        </div>
-
-        <div id="dropdown-menu" class="dropdown-content">
             <a class="cart" href="/products/buy">
                 <button><i class="bi bi-cart4"></i></button> Carrinho
             </a>
@@ -60,17 +55,12 @@
                     </div>
                     <h1>{{this.name}}</h1>
                     <div class="content">
-                        <!-- Conteúdo adicional aqui -->
+                        
                     </div> 
                 </div> 
             {{/each}} 
         </div>
     </main>
 
-    <script>
-        document.getElementById('menu-btn').addEventListener('click', function() {
-            document.getElementById('dropdown-menu').classList.toggle('show');
-        });
-    </script>
 </body>
 </html>
