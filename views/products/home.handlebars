@@ -29,22 +29,28 @@
     {{/if}}
     </form>
     </div>
-        
-        <a class="cart" href="/products/buy"> 
-            <button><i class="bi bi-cart4"></i></button>
-        </a>
+   <div class="menu-toggle">
+    <button id="menu-btn"><i class="bi bi-three-dots"></i></button>
+</div>
 
-      <nav class="login-area">
+<div id="dropdown-menu" class="dropdown-content">
+    
+    <a class="cart" href="/products/buy">
+        <button><i class="bi bi-cart4"></i></button> Carrinho
+    </a>
+
+    <nav class="login-area">
         {{#if session.userid}}
-        <a class="cadastrarProd" href="/logout">Logout</a>
+            <a class="cadastrarProd" href="/logout">Logout</a>
         {{else}}
-        <a class="cadastrar" href="/login">Login</a>
+            <a class="cadastrar" href="/login">Login</a>
         {{/if}}
         {{#if session.isSupplier}}
-         <a class="cadastrarProd" href="/products/add">Cadastrar produto</a>
+            <a class="cadastrarProd" href="/products/add">Cadastrar produto</a>
         {{/if}}
-    </nav>  
-        
+    </nav>
+</div>
+
 </div>
 
 </header>
@@ -66,9 +72,12 @@
     <div>
 
 </main>
-    
-       
+         
 </body>
-
+<script>
+    document.getElementById('menu-btn').addEventListener('click', function() {
+        document.getElementById('dropdown-menu').classList.toggle('show');
+    });
+</script>
 
 </html>

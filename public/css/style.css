@@ -49,14 +49,46 @@
      .home-header {
          max-width: 100%; 
          align-items: center; 
+         justify-content: space-between;
      }
      .home-header input {
         width: 300px;
      }
-     .login-area{
-        display: flex;
-     }
+     
  }
+ .dropdown-content {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    z-index: 1;
+}
+
+.dropdown-content a,
+.dropdown-content button {
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: relative;
+    }
+
+    .cart, .login-area {
+        display: none;
+    }
+
+    .dropdown-content.show {
+        display: flex;
+    }
+}
+
  
  .home-header input {
      padding: 0.5em;
