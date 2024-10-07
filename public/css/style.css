@@ -56,40 +56,39 @@
      }
      
  }
- .dropdown-content {
+
+.dropdown-content {
     display: none;
     flex-direction: column;
     background-color: white;
-    border: 1px solid #ccc;
     position: absolute;
     right: 10px;
     top: 50px;
     z-index: 1;
+    width: 200px; 
+
+
+.dropdown-content.show {
+    display: flex;
 }
 
-.dropdown-content a,
-.dropdown-content button {
-    padding: 10px;
-    text-align: left;
-    width: 100%;
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none; 
+    }
 }
 
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
-        position: relative;
     }
 
     .cart, .login-area {
-        display: none;
-    }
-
-    .dropdown-content.show {
-        display: flex;
+        display: none; 
     }
 }
 
- 
+
  .home-header input {
      padding: 0.5em;
      background-color: #e7e7e7;

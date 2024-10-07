@@ -15,8 +15,7 @@
         <a class="logo"> 
             <img src="/images/logopdart2.png" alt="logopd" width="300px">
         </a>
-    
-    <div class="home-header">
+ <div class="home-header">
     <form action="/products" method="GET">
     <input class="barra-search" type="text" name="search" 
         placeholder="Search" value="{{searchQuery}}">
@@ -28,13 +27,16 @@
     <p>Você pesquisou por: {{searchQuery}}</p>
     {{/if}}
     </form>
-    </div>
+</div>
    <div class="menu-toggle">
     <button id="menu-btn"><i class="bi bi-three-dots"></i></button>
-</div>
+    </div>
+
+    <div class="menu-toggle">
+    <button id="menu-btn"><i class="bi bi-three-dots"></i></button>
+    </div>
 
 <div id="dropdown-menu" class="dropdown-content">
-    
     <a class="cart" href="/products/buy">
         <button><i class="bi bi-cart4"></i></button> Carrinho
     </a>
@@ -49,9 +51,7 @@
             <a class="cadastrarProd" href="/products/add">Cadastrar produto</a>
         {{/if}}
     </nav>
-</div>
-
-</div>
+  </div>
 
 </header>
 <main>
@@ -72,12 +72,12 @@
     <div>
 
 </main>
-         
-</body>
 <script>
     document.getElementById('menu-btn').addEventListener('click', function() {
         document.getElementById('dropdown-menu').classList.toggle('show');
     });
 </script>
+     
+</body>
 
 </html>
