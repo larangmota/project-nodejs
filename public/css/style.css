@@ -1,7 +1,7 @@
 
 *{
     margin: 0;
-    font-family: "Caveat Brush", cursive;
+    font-family: "Caveat Brush", cursive, sans-serif;
     background-color: #FFFFFF;
    
 }
@@ -13,7 +13,7 @@
   }
 body {
     -webkit-font-smoothing: antialiased;
-}
+	}
   #head {
     display: flex;
     width: 100%;
@@ -306,16 +306,11 @@ body {
    border-radius: 10px;
 }
 @media (max-width: 768px) { 
-	.produtos-text .buy-text{
-	-webkit-font-smoothing: antialiased;
-	font-family: "Caveat Brush", cursive;
-	}
 	.buyProducts{
 		align-items: center;
                 justify-content: center;
 		height: auto;
-		font-family: "Caveat Brush", cursive;
-	}
+		}
 }
 .buyProducts{
     align-items: center;
@@ -346,7 +341,7 @@ body {
 .footer-buy{
     display: flex;
     justify-content: space-between;
-    height: 50px;gi
+    height: 50px;
     padding-bottom: 30px;
 }
 .btn-finishbuy{
