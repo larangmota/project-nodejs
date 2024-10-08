@@ -53,10 +53,6 @@ body {
         padding: 15px;
         border-bottom: 2px solid rgb(180, 180, 180); 
     }
-    .logo {
-        margin-left: -20px;
-        cursor: pointer;
-    }
     
     .header-actions { 
         display: flex; 
@@ -66,7 +62,12 @@ body {
         width: 100%; 
         margin-top: 10px; 
     }
-
+	.home-header input{
+		width:250px;
+	}
+	 .home-header button{
+		margin-left: 3px;
+	 }
     .cart button {
         margin-right: 10px; 
     }
@@ -392,27 +393,27 @@ body {
     align-itens: center;
     text-decoration: none;
 }
-/* Carrinho de Compras */
+
 @media (max-width: 768px) {
     .buyProducts {
         display: flex;
-        flex-direction: column; /* Mantenha a coluna */
+        flex-direction: column;
         padding: 10px;
-        align-items: center; /* Centraliza o conteúdo */
+        align-items: center; 
     }
 
     .buy-header {
-        width: 100%; /* Garante que o cabeçalho ocupe a largura total */
-        text-align: center; /* Centraliza o texto */
+        width: 100%; 
+        text-align: center; 
     }
 
     .buy-text {
         display: flex;
-        flex-direction: row; /* Mantenha a linha para os produtos */
-        justify-content: space-between; /* Distribui os produtos com espaço */
-        width: 100%; /* Garante que o texto ocupe a largura total */
-        padding: 10px 0; /* Espaçamento em cima e embaixo */
-        align-items: center; /* Alinha os itens verticalmente */
+        flex-direction: row; 
+        justify-content: space-between; 
+        width: 100%; 
+        padding: 10px 0; 
+        align-items: center; 
     }
 
     .buy-text img {
@@ -429,10 +430,13 @@ body {
 
     .footer-buy {
         display: flex;
-        flex-direction: row; 
-        justify-content: center; 
-        width: 100%; 
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
         margin-top: 10px;
+        border-top: 1px solid black;
+        align-items: center;
+        padding-top: 30px;
     }
 
     .footer-buy a,
@@ -465,17 +469,17 @@ body {
 
 /* LOGIN E REGISTER */
 .auth-container{
-    border: 2px solid #333;
-    box-shadow: 5px 5px 10px  #333;
-    border-radius: 25px;
-    align-items: center;
+    	border: 2px solid #333;
+    	box-shadow: 5px 5px 10px  #333;
+    	border-radius: 25px;
+    	align-items: center;
 	max-width: 450px;
-    padding-top: 50px;
-    padding-bottom: 200px;
+    	padding-top: 50px;
+    	padding-bottom: 200px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-    font-family: "Caveat Brush", cursive;
+    	font-family: "Caveat Brush", cursive;
 }
 .auth-container h2{ 
 	margin-bottom: 1em;
@@ -483,9 +487,10 @@ body {
 	border-left: 4px solid #3d4646;
 	padding: .9em;
 	width: 100%;
-    justify-content: center;
-    margin-top: 50px;
-    font-family: "Caveat Brush", cursive;
+    	justify-content: center;
+    	margin-top: 50px;
+	font-size:26px;
+    	font-family: "Caveat Brush", cursive;
 }
 .auth-container a {
 	color:#3d4646;
@@ -515,7 +520,8 @@ body {
     padding: 5px;
     margin-bottom: 0.2em;
     font-size: 18px;
-	margin-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 20px;
 }
 
 .form-control textarea{
@@ -525,13 +531,13 @@ body {
 }
 form input[type='submit'],
 .btn{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+   	margin-top: 10px;
+   	margin-bottom: 10px;
+   	margin-left: 10px;
 	background-color:  #0707071a;
 	color: #3d4646;
 	border: 2px solid #0707071a;
-    display: flex;
+    	display: flex;
 	padding: .5em 1.2em;
 	font-size: 1em;
 	font-weight: bold;
