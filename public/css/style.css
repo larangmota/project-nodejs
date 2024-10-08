@@ -392,49 +392,56 @@ body {
     align-itens: center;
     text-decoration: none;
 }
-
+/* Carrinho de Compras */
 @media (max-width: 768px) {
     .buyProducts {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column; /* Mantenha a coluna */
         padding: 10px;
+        align-items: center; /* Centraliza o conteúdo */
+    }
+
+    .buy-header {
+        width: 100%; /* Garante que o cabeçalho ocupe a largura total */
+        text-align: center; /* Centraliza o texto */
     }
 
     .buy-text {
         display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        padding: 10px 0;
-        text-align: center;
+        flex-direction: row; /* Mantenha a linha para os produtos */
+        justify-content: space-between; /* Distribui os produtos com espaço */
+        width: 100%; /* Garante que o texto ocupe a largura total */
+        padding: 10px 0; /* Espaçamento em cima e embaixo */
+        align-items: center; /* Alinha os itens verticalmente */
     }
 
     .buy-text img {
-        width: 100%;
-        max-width: 150px;
-        margin: 0 auto;
-        padding: 10px;
+        width: 80px; 
+        height: auto; 
+        margin: 0 10px; 
     }
 
     .buy-subtext {
-        width: 100%;
-        text-align: center;
-        border: none;
-        padding: 10px;
+        flex: 1; 
+        text-align: left; 
+        margin-left: 10px; 
     }
 
     .footer-buy {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        display: flex;
+        flex-direction: row; 
+        justify-content: center; 
+        width: 100%; 
+        margin-top: 10px;
     }
 
-    .footer-buy a {
-        width: 100%;
-        margin: 10px 0;
-        text-align: center;
+    .footer-buy a,
+    .footer-buy button {
+        width: 48%; 
+        margin: 0 1%; 
     }
 }
+
 
 .empty-cart{
     padding: 20px;
