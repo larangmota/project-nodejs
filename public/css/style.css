@@ -34,7 +34,12 @@
      margin: 0 auto;
      text-align: center;
  }
- 
+ .header-actions {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+
  @media (max-width: 768px) {
     #head {
         flex-direction: column;
@@ -44,7 +49,11 @@
         padding: 15px;
         border-bottom: 2px solid rgb(180, 180, 180); 
     }
-
+    .logo {
+        margin-left: -20px;
+        cursor: pointer;
+    }
+    
     .header-actions { 
         display: flex; 
         flex-direction: row; 
