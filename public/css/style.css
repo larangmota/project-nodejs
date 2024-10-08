@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 
 *{
     margin: 0;
@@ -306,11 +307,9 @@ body {
    border-radius: 10px;
 }
 @media (max-width: 768px) { 
-	.buyProducts{
-		align-items: center;
-                justify-content: center;
-		height: auto;
-		}
+	.produtos-text, .buy-text, .buyProducts {
+    font-family: "Caveat Brush", cursive !important;
+}
 }
 .buyProducts{
     align-items: center;
