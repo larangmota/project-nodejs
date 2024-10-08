@@ -11,6 +11,9 @@
     font-weight: 400;
     font-style: normal;
   }
+body {
+    -webkit-font-smoothing: antialiased;
+}
   #head {
     display: flex;
     width: 100%;
@@ -285,16 +288,7 @@
     margin-top: 70px;
     background: ghostwhite;
 }
-@media (max-width: 768px) {
-    .produtos .produtos-text .buyProducts{
-        font-family: "Caveat Brush", cursive;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        padding: 15px;
-    }
-}
+
 .produtos-text{
     align-items: center;
     justify-content: center;
