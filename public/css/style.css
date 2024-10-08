@@ -305,7 +305,18 @@ body {
    padding: 30px;
    border-radius: 10px;
 }
-
+@media (max-width: 768px) { 
+	.produtos-text .buy-text{
+	-webkit-font-smoothing: antialiased;
+	font-family: "Caveat Brush", cursive;
+	}
+	.buyProducts{
+		align-items: center;
+                justify-content: center;
+		height: auto;
+		font-family: "Caveat Brush", cursive;
+	}
+}
 .buyProducts{
     align-items: center;
     justify-content: center;
@@ -313,6 +324,7 @@ body {
     text-align: center;
     display: flex;
     margin-top: 30px;
+    max-width: 100%;
 }
 .buy-products img{
     max-width: 100px;
